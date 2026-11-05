@@ -11,9 +11,13 @@ tuesday = 1
 wednesday = 2
 discount_rate = 0.10
 sales_tax_rate = 0.06
-subtotal = 0.0
+subtotal = 0
 
-# ask user for the price and quantity until quantity is 0
+print()
+# continuesly ask user for the price and quantity until quantity is 0
+print("Enter the price and quantity of items. Enter 0 in quantity to continue.")
+print("with the weekday discount check, sales tax calculation, and final total.")
+print()
 while True:
     price = float(input("Enter the price per item: "))
     quantity = int(input("Enter the quantity: "))
