@@ -39,7 +39,7 @@ def main():
     lp100k = lp100k_from_mpg(mpg)
 
     # Display the results for the user to see.
-    print(f"{mpg:.2f} miles per gallon")
+    print(f"{mpg:.1f} miles per gallon")
     print(f"{lp100k:.2f} liters per 100 kilometers")
 
 
