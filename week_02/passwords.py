@@ -6,7 +6,7 @@ def main():
     while password != quit:
         password = input("Enter a password: ")
 
-    main()
+main()
 
 
 if __name__ == "__main__":
