@@ -4,10 +4,10 @@ program: Password Strength Checker
 creativity: I added a clearer message for the user to understand the strength of their password and how to improve it.
 """
 
-LOWER=["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-UPPER=["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
-DIGITS=["0","1","2","3","4","5","6","7","8","9"]
-SPECIAL=["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+", "[", "]", "{", "}", "|", ";", ":", "'", "\"", ",", ".", "<", ">", "?", "/", "\\","`", "~"]
+LOWER = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+UPPER = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+DIGITS = ["0","1","2","3","4","5","6","7","8","9"]
+SPECIAL = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+", "[", "]", "{", "}", "|", ";", ":", "'", "\"", ",", ".", "<", ">", "?", "/", "\\","`", "~"]
 
 # These files are used to reject dictionary words and commonly used passwords.
 WORDLIST_FILE = __file__.replace("passwords.py", "wordlist.txt")
@@ -53,7 +53,7 @@ def word_complexity(word):
 
 
 def password_strength(password, min_length=10, strong_length=16):
-    
+
     # Reject weak passwords before evaluating length or complexity.
     if word_in_file(password, WORDLIST_FILE):
         print("Not secure: this is a dictionary word. Choose a unique password instead.")
