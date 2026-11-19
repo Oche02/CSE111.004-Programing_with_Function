@@ -12,6 +12,7 @@ def prefix(string1, string2):
         string2: another string of text
     Return: a string
     """
+    
     # Convert both strings to lower case.
     string1 = string1.lower()
     string2 = string2.lower()
