@@ -48,7 +48,7 @@ def pressure_loss_from_pipe(pipe_diameter, pipe_length, friction_factor, fluid_v
     return numerator / denominator
 
 def pressure_loss_from_fittings(fluid_velocity, quantity_fittings):
-    return -.04 * WATER_DENSITY * fluid_velocity * 2 * quantity_fittings / 2000
+    return -0.04 * WATER_DENSITY * fluid_velocity ** 2 * quantity_fittings / 2000
 
 def reynolds_number(hydraulic_diameter, fluid_velocity):
     return (WATER_DENSITY * hydraulic_diameter * fluid_velocity

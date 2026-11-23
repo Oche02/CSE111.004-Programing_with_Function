@@ -1,5 +1,6 @@
 [
   "test_water_flow.py::test_pressure_gain_from_water_height",
+  "test_water_flow.py::test_pressure_loss_from_fittings",
   "test_water_flow.py::test_pressure_loss_from_pipe",
   "test_water_flow.py::test_water_column_height",
   "test_words.py::test_prefix",
