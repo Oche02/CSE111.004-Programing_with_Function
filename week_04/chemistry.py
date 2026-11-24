@@ -101,6 +101,7 @@ def make_periodic_table():
         "Zn": ["Zinc", 65.38],
         "Zr": ["Zirconium", 91.224],
         }
+    return periodic_table_dict
 
 
 def main():
