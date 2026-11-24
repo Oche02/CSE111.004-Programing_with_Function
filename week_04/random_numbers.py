@@ -1,6 +1,6 @@
 """
 Author: Augustine Okpe Oche
-Program:
+Program: Random numbers and words
 """
 
 import random
@@ -29,7 +29,7 @@ def append_random_words(words_list, quantity=1):
     return
         nohing.
     """
-    words = ["saw", "eggs", "mat", "shoe", "pen", "ten"]
+    words = ["saw", "eggs", "mat", "shoe", "pen", "ten", 'join', 'love', 'smile', 'love', 'cloud', 'head']
     for _ in range(quantity):
         random_word = random.choice(words)
         words_list.append(random_word)
@@ -53,6 +53,10 @@ def main():
 
     # append random choiced words in the word list.
     append_random_words(words_list, 5)
+    print(f"{words_list}")
+
+    # append random choiced words in the word list.
+    append_random_words(words_list, 8)
     print(f"{words_list}")
 
 if __name__ == "__main__":
