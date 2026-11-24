@@ -3,6 +3,9 @@ Author: Augustine Okpe Oche
 Program:
 """
 
+from formula import parse_formula
+
+
 def make_periodic_table():
     periodic_table_dict = {
         # symbol: [name, atomic_mass]
@@ -100,14 +103,49 @@ def make_periodic_table():
         "Yb": ["Ytterbium", 173.054],
         "Zn": ["Zinc", 65.38],
         "Zr": ["Zirconium", 91.224],
-        }
+    }
     return periodic_table_dict
+
+
+def compute_molar_mass(symbol_quantity_list, periodic_table_dict):
+    """
+    Compute and return the total molar mass of all the elements listed in symbol_quantity_list.
+        loop through the item's in the symbol_quantity_list
+            For each item in the list use the element's symbol to lookup the atomic
+            mass of the element in the periodic_table_dict dictionary.
+            Multiply the elements atomic weight by the quantity of atoms for the element
+            (from the symbol_quantity_list) and add that to the total mass.
+    Return the total mass.
+    """
 
 
 def main():
     # call the make_periodic_table function
     table = make_periodic_table()
     print(f"{table}")
+
+    # Asks the user for a chemical formula.
+
+
+    # Asks the user for the sample size in grams.
+
+
+    # Call make_periodic_table function and store returned dictionary in variable.
+
+
+    # Call parse_formula (from provided library) to get a list of elements in formula. (store in a variable).
+
+
+    # Call compute_molar_mass to calculate the molar mass. Pass in the periodic table dictionary and element list returned from the previous functions.
+
+
+    # Display the molar mass.
+
+
+    # Calculate Number of moles in the sample.
+
+    
+    # Display the Number of moles.
 
 
 if __name__ == "__main__":
